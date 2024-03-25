@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .product-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            padding-top: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .product-section {
+                justify-content: center;
+            }
+
+            .product {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <h1>Online Store</h1>
+    </header>
+
+    <div id="products" class="container">
+        <h2>Our products</h2>
+        <div class="product-section">
+            <div class="product">
+                <img src="https://imgs.search.brave.com/HnsvBnnVXk0Tk1iKIa72r8dgEtqPGiKiyfLG2LNcrsY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLmNvbGxpZGVy/aW1hZ2VzLmNvbS93/b3JkcHJlc3Mvd3At/Y29udGVudC91cGxv/YWRzLzIwMjAvMDYv/cHM1LWltYWdlLTEt/NjAweDMwMC5qcGc" alt="Product 1">
+                <h3>PlayStation 5 (PS5)</h3>
+                <p>The PlayStation 5 (PS5) is Sony's latest gaming console, boasting powerful hardware and innovative features. With its
+                custom-designed AMD CPU and GPU, ultra-fast SSD storage, and support for 4K gaming, the PS5 offers stunning visuals and
+                smooth gameplay. Its DualSense controller enhances immersion with advanced haptic feedback and adaptive triggers.
+                Backward compatibility ensures access to a vast library of PlayStation 4 games, while exclusive titles like "Spider-Man:
+                Miles Morales" and "Demon's Souls" showcase the console's capabilities. The PS5 represents a significant leap forward in
+                gaming technology, delivering an unparalleled gaming experience to players worldwide.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="https://imgs.search.brave.com/b2CskBEUKFSV5vFYh4HSWz0WEjP1dVoJGtERjhMHufk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMtbmEuc3NsLWlt/YWdlcy1hbWF6b24u/Y29tL2ltYWdlcy9J/LzYxempqMnNnWE1M/LmpwZw" alt="Product 2">
+                <h3>Xbox Series XIS</h3>
+                <p>The Xbox Series X|S is Microsoft's latest gaming console lineup, offering powerful hardware for stunning graphics and
+                fast gameplay. With support for up to 4K gaming, backward compatibility, and exclusive titles like "Halo Infinite," the
+                Xbox Series X|S delivers an immersive gaming experience to players worldwide.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <!--ps vita product-->
+            <div class="product">
+                <img src="https://imgs.search.brave.com/A72McsJ_CVtgaVO-0LN_ucdbr_uV6oPH8y0yppd7ors/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFGcE13WUxTZUwu/anBn" alt="Product 3">
+                <h3>PSvita</h3>
+                <p>The PlayStation Vita (PS Vita) is a sleek handheld gaming console by Sony, known for its vibrant OLED display and dual
+                analog sticks, offering gamers a portable gaming experience with high-quality graphics and precise controls. With
+                built-in Wi-Fi and 3G connectivity, players can enjoy online multiplayer gaming and access a variety of digital content
+                through the PlayStation Store, making the PS Vita a popular choice for gaming on the go.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="https://imgs.search.brave.com/AgVSiIvcQUceLo3Y5uMM6Tg8rf-eULe6ESt2XQwkqpY/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTIx/MDIyNDMyOC9waG90/by9hLW5pbnRlbmRv/LXN3aXRjaC1saXRl/LWhhbmRoZWxkLXZp/ZGVvLWdhbWUtY29u/c29sZS10YWtlbi1v/bi1vY3RvYmVyLTEt/MjAxOS5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9dTdCOHo0/bU9tVGJkZTRibTRQ/U3otT1BRTElsY0cy/NXhSVkx4UVl2a29r/QT0" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>The latest product from Nintendo is the Nintendo Switch OLED model. Released in October 2021, the Nintendo Switch OLED
+                model enhances the original Nintendo Switch console with a larger, vibrant OLED display, providing sharper and more
+                vivid visuals for gaming on the go. It retains the versatility of the original Switch, allowing players to seamlessly
+                transition between handheld, tabletop, and docked modes. With its improved screen and enhanced audio capabilities, the
+                Nintendo Switch OLED model offers an immersive gaming experience for players, along with access to a vast library of
+                Nintendo Switch games, including popular titles like "The Legend of Zelda: Breath of the Wild" and "Animal Crossing: New
+                Horizons."</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+    <footer id="contact">
+        <p>&copy; 2024 Online Store. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
